@@ -103,9 +103,9 @@ function Cardanimation() {
       <div className={styles.animationTextScrollEffect} style={{ position: position }} >
         <div className={styles.loremText} ref={animationLoremText} >
           Distribute and manage insurance business <span className={styles.highlightRed}>in one platform</span>
-          <p className={styles.loremSubText}>Manage your insurance business seamlessly using Riskcovry's assurance platform. Increase revenue, expand product offerings.</p><button className={styles.CTAButton}>Schedule Demo</button>
+          <p className={styles.loremSubText}>Manage your insurance business seamlessly using Riskcovry&apos;s assurance platform. Increase revenue, expand product offerings.</p><button className={styles.CTAButton}>Schedule Demo</button>
           Lorem, ipsum dolor sit amet consectetur adipisici<span className={styles.highlightRed}>in one platform</span>
-          <p className={styles.loremSubText}>Manage your insurance business seamlessly using Riskcovry's assurance platform. Increase revenue, expand product offerings.</p><button className={styles.CTAButton}>Schedule Demo</button>
+          <p className={styles.loremSubText}>Manage your insurance business seamlessly using Riskcovry&apos;s  assurance platform. Increase revenue, expand product offerings.</p><button className={styles.CTAButton}>Schedule Demo</button>
         </div>
       </div>
     </div>

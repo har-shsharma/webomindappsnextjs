@@ -8,7 +8,7 @@ function Footer() {
       <div className={styles.footerTextContainer}>
         <span className={styles.footerHeading}>Leverage technology to streamline credit-linked insurance</span>
         <span className={styles.footerSubHeading}>Share a few quick details to understand how we can best help.</span>
-        <button className={styles.footerCTAButton}>Let's Talk</button>
+        <button className={styles.footerCTAButton}>Let&apos;s Talk</button>
       </div>
       <div className={styles.footerContactComponent}>
         <div className={styles.footerEndHeader}>
