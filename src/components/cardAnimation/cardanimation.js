@@ -94,7 +94,7 @@ function Cardanimation() {
       ref={cardAnimationContainer}
     >
       <div className={styles.cardAnimationContents}>
-        <div className={styles.cardAnimationImage}></div>
+        <div className={styles.cardAnimationImage} ></div>
         <div className={styles.animationFocusContainer}>
           <div className={styles.animationIcon1} ref={cardAnimationIcon1Ref}></div>
           <div className={styles.animationIcon2} ref={cardAnimationIcon2Ref}></div>
