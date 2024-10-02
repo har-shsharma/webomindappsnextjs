@@ -1,0 +1,95 @@
+.cardAnimationContainer {
+    position: absolute;
+    top: 2100px;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+}
+
+.cardAnimationImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-image: url('/images/card6.jpeg');
+    width: 33vw;
+    height: 70vh;
+    border-radius: 29.38px;
+    position: absolute;
+    top: 15%;
+    left: 10vw;
+}
+
+.cardAnimationContents {
+    width: 100vw;
+}
+
+.animationIcon1 {
+    background-image: url('/images/Mask\ group.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 196.89px;
+    height: 179.11px;
+    position: absolute;
+    top: 267.88px;
+    left: 3vw;
+    border-radius: 15.82px 0px 0px 0px;
+
+}
+
+.animationIcon2 {
+    background-image: url('/images/Mask\ group.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 196.89px;
+    height: 179.11px;
+    position: absolute;
+    top: 600.88px;
+    left: 36vw;
+    border-radius: 15.82px 0px 0px 0px;
+
+}
+
+.animationTextScrollEffect {
+    width: 523.28px;
+    height: 310.78px;
+    position: fixed;
+    top: 300px;
+    left: 50vw;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.loremText {
+    position: absolute;
+    top: 100px;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: right;
+    color: black;
+}
+
+.CTAButton {
+    position: relative;
+    display: block;
+    background-color: #EE1B30;
+    color: white;
+    width: 161.24px;
+    height: 39.78px;
+    border: none;
+    border-radius: 36.93px;
+    right: -350px;
+    margin: 30px 0 40px 0;
+}
+
+.loremSubText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: right;
+
+}
+
+.highlightRed {
+    color: red;
+}

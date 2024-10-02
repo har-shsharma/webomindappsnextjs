@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@gsap/react": "^2.1.1",
+    "gsap": "^3.12.5",
+    "next": "14.2.14",
+    "next-transpile-modules": "^10.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.14"
+    "react-use": "^17.5.1"
   },
   "devDependencies": {
     "eslint": "^8",

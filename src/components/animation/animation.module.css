@@ -1,0 +1,165 @@
+.animationContainer {
+    width: 100vw;
+    height: 936.59px;
+    position: absolute;
+    top: 786px;
+    background-color: white;
+}
+
+
+.animationTextHeading {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 60px;
+    color: black;
+}
+
+.highlightRed {
+    color: #EE1B30;
+}
+
+.animationTextContainer {
+    width: 788.82px;
+    height: 120px;
+    position: absolute;
+    right: 90px;
+    text-align: right;
+
+}
+
+.animationItem1 {
+    background-image: url('/images/card1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 60px;
+}
+
+.animationItem2 {
+    background-image: url('/images/card2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 95px;
+}
+
+.animationItem3 {
+    background-image: url('/images/card3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 130px;
+}
+
+.animationItem4 {
+    background-image: url('/images/card4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 165px;
+
+}
+
+.animationItem5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-image: url('/images/card6.jpeg');
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 200px;
+    transition: background-image 0.5s ease-in-out;
+}
+
+
+
+.animationItem6 {
+    background-image: url('/images/card5.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 235px;
+}
+
+.animationItem7 {
+    background-image: url('/images/card7.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 270px;
+}
+
+.animationItem8 {
+    background-image: url('/images/card8.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 305px;
+}
+
+.animationItem9 {
+    background-image: url('/images/card9.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 340px;
+}
+
+.animationItem10 {
+    background-image: url('/images/card10.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 375px;
+}
+
+.animationItems {
+    width: 100vw;
+}

@@ -1,0 +1,144 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #000;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 86.14px;
+  z-index: 10;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbarBrand {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/images/webo_logo_ai-01\ 1\ \(1\).png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 246.31px;
+  height: 100%;
+  position: relative;
+  top: 11.2px;
+  left: 6.5vw;
+}
+
+
+.navbarLinks,
+.navbarButton {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  line-height: normal;
+}
+
+.navbarLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbarLinks li .navLinkItems {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.navbarLinks li a {
+  margin-left: 22.51px;
+}
+
+.navbarLinks li a:hover {
+  cursor: pointer;
+}
+
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  right: -40px;
+}
+
+
+.navbarButton {
+  padding: 8px 26px;
+  background-color: #EE1B30;
+  width: 161.24px;
+  height: 39.78px;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  line-height: normal;
+  margin-right: 10px;
+  border-radius: 36.93px;
+}
+
+.navbarButton:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.navElements {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 35.51px;
+  margin-right: 90px;
+}
+
+@media (max-width: 1030px) {
+  .menuToggle {
+    display: block;
+  }
+
+  .navbarLinks,
+  .navbarSocial,
+  .navbarButton {
+    display: none;
+  }
+
+  .navbarLinks.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 78px;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    padding: 10px 0 10px 0;
+    gap: 15px;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .navbarButton.open {
+    display: inline-block;
+    width: auto;
+  }
+
+  .buttonContainer {
+    display: none;
+  }
+
+  .buttonContainer.open {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 225px;
+    left: 15px;
+    padding: 10px 0 50px 0;
+  }
+}
