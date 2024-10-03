@@ -91,7 +91,6 @@ function Cardanimation() {
         scrollTrigger:{
           trigger:cardRef.current,
           scroller:"body",
-          markers:true,
           start:"top top",
           end:"top -30%",
           scrub:2
