@@ -19,6 +19,20 @@
     left: 10vw;
 }
 
+.cardAnimationImage1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-image: url('/images/card3.jpeg');
+    width: 33vw;
+    height: 70vh;
+    border-radius: 29.38px;
+    position: absolute;
+    top: 15%;
+    left: 10vw;
+    z-index: -1;
+}
+
 .cardAnimationContents {
     width: 100vw;
 }

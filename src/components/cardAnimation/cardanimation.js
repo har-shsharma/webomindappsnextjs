@@ -10,6 +10,7 @@ function Cardanimation() {
   const cardAnimationIcon1Ref = useRef(null);
   const cardAnimationIcon2Ref = useRef(null);
   const animationLoremText = useRef(null);
+  const cardRef = useRef(null);
   const [position, setPosition] = useState('absolute');
   const [topValue, setTopValue] = useState('2100px');
 
@@ -84,6 +85,19 @@ function Cardanimation() {
         }
       });
 
+      gsap.to(cardRef.current,{
+        opacity:0,
+        duration:2,
+        scrollTrigger:{
+          trigger:cardRef.current,
+          scroller:"body",
+          markers:true,
+          start:"top top",
+          end:"top -30%",
+          scrub:2
+        }
+      })
+
     }
   }, []);
 
@@ -94,7 +108,8 @@ function Cardanimation() {
       ref={cardAnimationContainer}
     >
       <div className={styles.cardAnimationContents}>
-        <div className={styles.cardAnimationImage} ></div>
+        <div className={styles.cardAnimationImage} ref={cardRef} ></div>
+        <div className={styles.cardAnimationImage1} ></div>
         <div className={styles.animationFocusContainer}>
           <div className={styles.animationIcon1} ref={cardAnimationIcon1Ref}></div>
           <div className={styles.animationIcon2} ref={cardAnimationIcon2Ref}></div>
