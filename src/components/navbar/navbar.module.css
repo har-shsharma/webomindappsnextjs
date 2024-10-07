@@ -5,7 +5,7 @@
   padding: 10px 20px;
   color: #000;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
   height: 86.14px;
