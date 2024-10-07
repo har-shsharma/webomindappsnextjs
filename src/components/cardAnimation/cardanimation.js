@@ -86,13 +86,13 @@ function Cardanimation() {
       });
 
       gsap.to(cardRef.current,{
-        opacity:0,
+        opacity:1,
         duration:2,
         scrollTrigger:{
           trigger:cardRef.current,
           scroller:"body",
-          start:"top top",
-          end:"top -30%",
+          start:"top 0%",
+          end:"top -20%",
           scrub:2
         }
       })
@@ -107,8 +107,7 @@ function Cardanimation() {
       ref={cardAnimationContainer}
     >
       <div className={styles.cardAnimationContents}>
-        <div className={styles.cardAnimationImage} ref={cardRef} ></div>
-        <div className={styles.cardAnimationImage1} ></div>
+        <div className={styles.cardAnimationImage1 } ref={cardRef}  ></div>
         <div className={styles.animationFocusContainer}>
           <div className={styles.animationIcon1} ref={cardAnimationIcon1Ref}></div>
           <div className={styles.animationIcon2} ref={cardAnimationIcon2Ref}></div>

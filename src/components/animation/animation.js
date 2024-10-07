@@ -84,30 +84,45 @@ function Animation() {
       });
 
       gsap.to(animationItemRefs.current[4], {
-        y: 900,
-        x: -400,
+        y: "170vh",
         duration: 1,
-        transform: "skewY(0)",
         scrollTrigger: {
           trigger: animationItemRefs.current[4],
           scroller: "body",
           start: "top -30%",
+          end: "top -300%",
+          scrub: true
+        }
+      });
+
+      gsap.to(animationItemRefs.current[4], {
+        opacity:0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: animationItemRefs.current[4],
+          scroller: "body",
+          start: "top -170%",
           end: "top -180%",
-          scrub: 2
+          scrub: true
         }
       });
 
       gsap.to(animationItemRefs.current[4], {
         duration: 1,
-        opacity: 0,
+        transform: "skewY(0)",
+        width:'33vw',
+        height:'70vh',
+        x: "-26.4vw",
         scrollTrigger: {
           trigger: animationItemRefs.current[4],
           scroller: "body",
-          start: "top -120%",
-          end: "top -130%",
-          scrub: 2
+          start: "top -30%",
+          end: "top -150%",
+          scrub: true
         }
       });
+
+  
 
       gsap.to(animationItemRefs.current[5], {
         x: 150,
@@ -182,12 +197,12 @@ function Animation() {
           </span>
         </div>
 
-        <div className={styles.animationItems}>
+        <div className={styles.animationItems} >
           {leftValues.map((leftValue, index) => (
             <div
               key={index}
               className={`${styles[`animationItem${index + 1}`]}`}
-              style={{ left: `${leftValue}px` }}
+              style={{ left: `${leftValue}px`}}
               ref={(el) => (animationItemRefs.current[index] = el)}
             ></div>
           ))}
