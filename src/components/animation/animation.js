@@ -11,7 +11,8 @@ function Animation() {
   const originalLeftValues = [0, 140, 280, 420, 560, 700, 840, 980, 1120, 1260];
   const baseWidth = 1536;
   const animationItemRefs = useRef([]);
-
+  const mainAnimationItemContainerRef = useRef(null);
+  const mainAnimationItemRef = useRef(null);
 
   const calculateLeftValues = (screenWidth) => {
     return originalLeftValues.map(value => (value / baseWidth) * screenWidth);
@@ -79,50 +80,50 @@ function Animation() {
           scroller: 'body',
           start: 'top top',
           end: 'top -50%',
-          scrub: 2
+          scrub: 2,
+          pin: true
         },
       });
 
-      gsap.to(animationItemRefs.current[4], {
-        y: "170vh",
-        duration: 1,
+      gsap.to(mainAnimationItemRef.current, {
+        duration: 2,
         scrollTrigger: {
-          trigger: animationItemRefs.current[4],
+          trigger: `.${styles.mainAnimationItemContainer}`,
           scroller: "body",
-          start: "top -30%",
-          end: "top -300%",
-          scrub: true
+          start: "top -95%",
+          end: "top -400%",
+          scrub: 2,
+          pin: true
         }
-      });
+      })
 
-      gsap.to(animationItemRefs.current[4], {
-        opacity:0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: animationItemRefs.current[4],
-          scroller: "body",
-          start: "top -170%",
-          end: "top -180%",
-          scrub: true
-        }
-      });
-
-      gsap.to(animationItemRefs.current[4], {
+      gsap.to(mainAnimationItemRef.current, {
         duration: 1,
         transform: "skewY(0)",
-        width:'33vw',
-        height:'70vh',
+        width: '33vw',
+        height: '70vh',
         x: "-26.4vw",
+        y: -90,
         scrollTrigger: {
-          trigger: animationItemRefs.current[4],
+          trigger: mainAnimationItemRef.current,
           scroller: "body",
-          start: "top -30%",
+          start: "top -50%",
           end: "top -150%",
-          scrub: true
+          scrub: 2
         }
       });
 
-  
+      gsap.to(mainAnimationItemRef.current, {
+        duration: 1,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: mainAnimationItemRef.current,
+          scroller: "body",
+          start: "top -150%",
+          end: "top -160%",
+          scrub: 2
+        }
+      });
 
       gsap.to(animationItemRefs.current[5], {
         x: 150,
@@ -132,8 +133,7 @@ function Animation() {
           scroller: 'body',
           start: 'top top',
           end: 'top -50%',
-          scrub: 2,
-          pin: true,
+          scrub: 2
         },
       });
 
@@ -141,11 +141,12 @@ function Animation() {
         x: 300,
         duration: 2,
         scrollTrigger: {
-          trigger: `.${styles.animationContainer}`,
+          trigger: `.${styles.animationContainer1}`,
           scroller: 'body',
           start: 'top top',
           end: 'top -50%',
-          scrub: 2
+          scrub: 2,
+          pin: true
         },
       });
 
@@ -198,12 +199,29 @@ function Animation() {
         </div>
 
         <div className={styles.animationItems} >
-          {leftValues.map((leftValue, index) => (
+          {leftValues.slice(0, 5).map((leftValue, index) => (
             <div
               key={index}
               className={`${styles[`animationItem${index + 1}`]}`}
-              style={{ left: `${leftValue}px`}}
+              style={{ left: `${leftValue}px` }}
               ref={(el) => (animationItemRefs.current[index] = el)}
+            ></div>
+          ))}
+        </div>
+      </div>
+
+      <div className={styles.mainAnimationItemContainer} ref={mainAnimationItemContainerRef}>
+        <div className={styles.mainAnimationItem} ref={mainAnimationItemRef} style={{ left: `${leftValues[4]}px` }}></div>
+      </div>
+
+      <div className={styles.animationContainer1}>
+        <div className={styles.animationItems} >
+          {leftValues.slice(5).map((leftValue, index) => (
+            <div
+              key={index}
+              className={`${styles[`animationItem${index + 6}`]}`}
+              style={{ left: `${leftValue}px` }}
+              ref={(el) => (animationItemRefs.current[index + 5] = el)}
             ></div>
           ))}
         </div>

@@ -3,9 +3,14 @@
     height: 936.59px;
     position: absolute;
     top: 786px;
-    background-color: white;
 }
 
+.animationContainer1 {
+    width: 100vw;
+    height: 936.59px;
+    position: absolute;
+    top: 786px;
+}
 
 .animationTextHeading {
     font-size: 44px;
@@ -25,6 +30,12 @@
     right: 90px;
     text-align: right;
 
+}
+
+.mainAnimationItemContainer{
+    width:100vw;
+    height:100vh;
+    z-index: 0;
 }
 
 .animationItem1 {
@@ -79,6 +90,22 @@
 
 }
 
+.mainAnimationItem{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-image: url('/images/card6.jpeg');
+    width:21.875vw;
+    height:60vh;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 1000px;
+    left:560px;
+    transition: background-image 0.5s ease-in-out;
+   z-index: 0;
+}
+
 .animationItem5 {
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,6 +118,7 @@
     position: absolute;
     top: 200px;
     transition: background-image 0.5s ease-in-out;
+    visibility: hidden;
 }
 
 
@@ -106,6 +134,7 @@
     transform: skewY(-10deg);
     position: absolute;
     top: 235px;
+    z-index: 1;
 }
 
 .animationItem7 {
@@ -119,6 +148,7 @@
     transform: skewY(-10deg);
     position: absolute;
     top: 270px;
+    z-index: 2;
 }
 
 .animationItem8 {
@@ -132,6 +162,7 @@
     transform: skewY(-10deg);
     position: absolute;
     top: 305px;
+    z-index: 3;
 }
 
 .animationItem9 {
@@ -145,6 +176,7 @@
     transform: skewY(-10deg);
     position: absolute;
     top: 340px;
+    z-index: 4;
 }
 
 .animationItem10 {
@@ -158,6 +190,7 @@
     transform: skewY(-10deg);
     position: absolute;
     top: 375px;
+    z-index: 5;
 }
 
 .animationItems {
