@@ -81,7 +81,8 @@ function Animation() {
           start: 'top top',
           end: 'top -50%',
           scrub: 2,
-          pin: true
+          pin: true,
+          pinSpacing:false
         },
       });
 
@@ -93,7 +94,8 @@ function Animation() {
           start: "top top",
           end: "top -400%",
           scrub: 2,
-          pin: true
+          pin: true,
+          pinSpacing:false
         }
       })
 
@@ -103,7 +105,7 @@ function Animation() {
         width: '33vw',
         height: '70vh',
         x: "-26.4vw",
-        y: -90,
+        y: -75,
         scrollTrigger: {
           trigger: mainAnimationItemRef.current,
           scroller: "body",
@@ -146,7 +148,8 @@ function Animation() {
           start: 'top top',
           end: 'top -50%',
           scrub: 2,
-          pin: true
+          pin: true,
+          pinSpacing:false
         },
       });
 
