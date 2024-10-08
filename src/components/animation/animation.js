@@ -90,7 +90,7 @@ function Animation() {
         scrollTrigger: {
           trigger: `.${styles.mainAnimationItemContainer}`,
           scroller: "body",
-          start: "top -95%",
+          start: "top top",
           end: "top -400%",
           scrub: 2,
           pin: true

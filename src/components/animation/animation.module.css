@@ -12,6 +12,13 @@
     top: 786px;
 }
 
+.mainAnimationItemContainer{
+    width: 100vw;
+    height: 936.59px;
+    position: absolute;
+    top: 786px;
+    z-index: 0;
+}
 .animationTextHeading {
     font-size: 44px;
     font-weight: 600;
@@ -32,11 +39,6 @@
 
 }
 
-.mainAnimationItemContainer{
-    width:100vw;
-    height:100vh;
-    z-index: 0;
-}
 
 .animationItem1 {
     background-image: url('/images/card1.jpeg');
@@ -100,7 +102,7 @@
     border-radius: 29.38px;
     transform: skewY(-10deg);
     position: absolute;
-    top: 1000px;
+    top: 200px;
     left:560px;
     transition: background-image 0.5s ease-in-out;
    z-index: 0;
